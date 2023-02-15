@@ -1,19 +1,80 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.item {
-    width: 200px;
-    height: 200px;
+header {
+    height: 60px;
+    background-color: #f2f2f2; /* HEX-формат, rgb() */
+}
+h1 {
+    text-align: center;
+}
+h1:hover {
+    color: red;
+}
+main {
+    width: 85%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap; /* возможность перейти элементам на новую строку, если им не хватает места */
+    background-color: #f2f2f2;
+    padding: 30px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5); /* тень блока */
+    border-radius: 8px; /* закругление краев */  
+}
+.item { 
+    width: calc(50% - 20px);
+    height: calc(100vh / 3);
     background-color: salmon;
+    margin: 10px;
+    background-size: cover; /* размер фоновой картинки */
+    background-repeat: no-repeat; /* не дублировать картинку, если ей не хватает метста */
+    background-position: center; /* центрировать картинку */
+    transition: 1s; /* время, за которое элемент будет меняться */
+}
+.item:hover {
+    transform: scale(1.05); /* увеличение элемента при наведении. >1 - увеличивается, <1 -уменьается */
+}
+.item-1 {
+    background-image: url(../images/img\ \(1\).jpg);
 }
 .item-2 {
-    background-color: royalblue;
-    margin-left: 200px;
+    background-image: url(../images/img\ \(2\).jpg);
 }
-
-
 /* 
+    ctrl+/ - комментарий
+    Псевдоклассы css
+        специальные состояния тегов, элементов
+        hover - состояние элемента при наведении на него мышью
+
+    h1 - 36px
+    p - 16px
+
+     2. для каждого блока добавить свою картинку фона
+
+    background-size:
+        1. cover - поместить картинку на всю ширину, а высоту масштабировать
+        2. contain - поместить картинку на всю высоту, а ширину масштабировать
+
+    ../images/img - 
+    ../ - выход из папки/назад
+100vh/3 = 33.3vh
+
+    Единицы измерения css:
+    1. px - 
+    2. %
+    3. vh - view height - 100vh - вся высота рабочего окна браузера,
+        vw - view width - 100vw - вся ширина рабочего окна браузера
+
+    Задача. Сделать так, чтобы в одной строке было два элемента. 
+    display: flex. 
+    flex - метод позиционирования элементов. По умолчанию при указании display:flex - размещает все 
+        дочерние элементы контейнера по горизонтали в одну строку. Свойство flex должно быть указано
+            для родителя элементов, которые вы хотите позиционировать.
+    У всех элементов во флекс контейнерее одинаковая ширина, которая вычисляется по принципу - "поместить все элементы"
+
+    Ctrl + Z - отменить последнеее изменение
     Селекторы:
     1. по тегу - название тега h1{}, div{}, p{}
     2. по классу - .названиеКласса .item, .text{}, .title{}
