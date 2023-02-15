@@ -1,3 +1,27 @@
-https://github.com/ArsenLen/070223FE
-https://doka.guide/
-https://developer.mozilla.org/ru/
+* {
+    margin: 0;
+    padding: 0;
+}
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+}
+.item-2 {
+    background-color: royalblue;
+    margin-left: 200px;
+}
+
+
+/* 
+    Селекторы:
+    1. по тегу - название тега h1{}, div{}, p{}
+    2. по классу - .названиеКласса .item, .text{}, .title{}
+
+
+    Есть normalize.css и reset.css - файлы, которые подключаются
+    для сброса стилей по умолчанию.
+
+    Задача. Из двух тегов див сделать два квадрата, размерами 200x200
+    Цвет пусть будет одинаковый.
+*/
