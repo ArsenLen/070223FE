@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* padding не включены в размер блока */
+}
+header {
+    height: 60px;
+    background-color: #f2f2f2;
+    margin-bottom: 40px;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse; /* границы ячеек не дублируются */
+}
+td, th {
+    font-size: 40px;
+    border: 1px solid black;
+    padding: 10px 15px;
+}
+.red {
+    color: red;
+}
+/* 
+    border: ширинаРамки типРамки цветРамки
+        тип границ: 
+    а) solid - одна линия
+    б) doubled - двойная линия
+
+
+    Позиционрирование по горизонтали (flex)
+    1. justify-content
+        а) flex-start - по левому краю
+        б) flex-end - по правому краю
+        в) center - по центру
+        г) space-between - равнодулаенно друг от друга
+        д) space-around - равноудаленно друг от друга, и по половине расстояния по бокам
+
+    main {
+        height: 100vh; 100vh - вся высота окна браузера 
+        display: flex;
+        justify-content: center;  по горизонтали 
+        align-items: center; /* по вертикали 
+        flex-direction: column; /* расположение элементов по вертикали 
+    }
+    .item {
+        width: 200px;
+        height: 200px;
+        background-color: crimson;
+        margin: 10px;
+    }
+        */
