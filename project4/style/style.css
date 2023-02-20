@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #1ABC9C;
+    height: 70px;
+}
+.wrapper {
+    width: 90%;
+    height: 100%; /* === 70px */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a {
+    font-size: 25px;
+    color: black;
+    text-decoration: none; /* убираем нижнее подчеркивание */
+}
+a:not(:last-child) {
+    margin-right: 20px;
+}
+.social-icon:not(:last-child) {
+    margin-right: 20px;
+}
+/* О нас */
+.about {
+    display: flex;
+    align-items: center;
+}
+.about-img {
+    width: 50%;
+}
+.about-info {
+    padding: 0 65px;
+}
+h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.about-descr {
+    font-size: 20px;
+    text-align: justify; /* выравнивание по ширине */
+}
+/* 
+    ctrl+/ - комментарий
+    Задача. Всем элементам с классом .social-icon, кроме последнего добавить отступ
+    
+    :not - НЕ
+    :last-child - последний элемент
+    :first-child - первый элемент
+    :nth-child(N) - задаем стили для N элемента  
+*/
