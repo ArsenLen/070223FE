@@ -9,8 +9,10 @@ header {
 }
 .wrapper {
     width: 90%;
-    height: 100%; /* === 70px */
     margin: 0 auto;
+}
+.header-wrapper {
+    height: 100%; /* === 70px */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +48,25 @@ h1 {
     font-size: 20px;
     text-align: justify; /* выравнивание по ширине */
 }
+/* Наши проекты */
+.projects {
+    background-color: #DCFFEB;
+    padding: 125px 0; /* 1 - сверху/снизу; 2 - справа/слева  */
+}
+h2 {
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.projects-list {
+    display: flex;
+    gap: 35px;
+}
+.projects-item {
+    width: calc(100% / 3 - 17px);
+}
 /* 
+    gap - отступ внутри flex контейнера
+
     ctrl+/ - комментарий
     Задача. Всем элементам с классом .social-icon, кроме последнего добавить отступ
     
@@ -54,4 +74,6 @@ h1 {
     :last-child - последний элемент
     :first-child - первый элемент
     :nth-child(N) - задаем стили для N элемента  
+
+    ДЗ. 
 */
