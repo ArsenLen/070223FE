@@ -1,11 +1,30 @@
-.scale {
-    width: 500px;
-    height: 15px;
-    background-color: rgb(185, 185, 185);
+.item, .item-1 {
+    width: 200px;
+    height: 200px;
+    background-color: khaki;
 }
-.scale-inner {
-    width: 7%;
-    height: 100%; /* 15px */
-    background-color: rgb(63, 63, 167);
+.item-1 {
+    position: absolute;
+    /* left: 500px; */
+    top: 0;
+    right: 0;
+    background-color: seagreen;
 }
-/* Создать шкалу примерно как на макете */
+/* 
+    обращение по классу приоритетнее чем по названию тега
+    position - свойство которое позолвяет адать способ позиционирования элемента в html
+    если указываем определенные значения posistion, то можем использовать координаты
+        top-сверху
+        left - слева
+        bottom - снизу 
+        right - справа
+
+    При указании position:absolute для элемента, 
+        он удаляется из общего потока документа и не влияет на положение других блоков
+        он можно сказать переносится на слой выше
+
+        tagName
+        .className
+        [attrNAme]
+        #id
+*/
