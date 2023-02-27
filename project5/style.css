@@ -103,7 +103,34 @@ input[type="submit"] {
 }
 iframe {
     width: 100%;
-    height: 480px;
+    aspect-ratio: 16/9; /* соотношение сторон 16/9 */
+}
+/* Проекты */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects-item {
+    width: 25%;
+    aspect-ratio: 1/1;
+    background-size: contain; /* во всю высоту, а ширина масштабируется */
+}
+.sticker {
+    background-image: url(./images/sticker.png);
+}
+.laptop {
+    background-image: url(./images/laptop.png);
+}
+.projects-item-inner {
+    height: 100%;
+    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects-item-inner:hover {
+    opacity: 1;
 }
 /* 
     h1,h2,h3,h4,h5,h6 - font-weight - 600 bold - жирный шритф
