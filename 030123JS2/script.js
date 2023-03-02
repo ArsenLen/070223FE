@@ -175,9 +175,10 @@ for(let i = 0; i < numbers.length; i++) {
     squares.push(numbers[i] * numbers[i])
 }
 console.log(squares)
+// squares.forEach()
 
 // 1. i = 0; 0 < 5 - true; squares.push(1 * 1); squares = [1]; i++
-// 2. i = 1; 1 < 5 - true, sqares.push(3 * 3); squares = [1, 9]; i++
+// 2. i = 1; 1 < 5 - true, squares.push(3 * 3); squares = [1, 9]; i++
 // 3. i = 2; 2 < 5 - true, squares.push(5 * 5); sqaures = [1, 9, 25]; i++
 // 4. i = 3; 3 < 5 - true, squares.push(9 * 9); squares = [1, 9, 25, 81]; i++
 // 5. i = 4; 4 < 5 - true, squares.push(10 * 10); squares = [1, 9, 25, 81, 100]; i++
