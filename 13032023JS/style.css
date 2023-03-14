@@ -24,3 +24,8 @@
 img {
     width: 50%;
 }
+
+
+div:hover .text, div:hover .link {
+    color: black;
+} 
