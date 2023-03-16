@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form {
+    background-color: #EEEFF1;
+    padding: 100px 0;
+}
+.form-wrapper {
+    width: 30%;
+    margin: auto;
+}
+.form-title {
+    font-size: 32px;
+    text-align: center;
+}
+.form-descr {
+    color: #727272;
+    text-align: center;
+    margin: 50px 0 65px; /* 1-сверху, 2-справа/слева, 3-снизу */
+}
+.form-control {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+input[name="name"], input[name="email"], textarea {
+    width: 50%;
+    padding: 20px;
+    border: none; /* убираем границу */
+    outline: none; /* граница по нажатию */
+}
+textarea {
+    width: 100%;
+    margin-bottom: 50px;
+}
+input[type="submit"] {
+    display: block;
+    margin: auto;
+    background-color: #34547A;
+    padding: 20px 45px;
+    color: white;
+    text-transform: uppercase; /* текст в верхнем регистре */
+    border: none; /* сброс границ */
+    outline: none; /* сброс границ при клике */
+}
+/* Мои навыки  */
+.skills {
+    padding: 100px 0;
+}
+.skills-wrapper {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills-info {
+    width: 40%;
+}
+.skills-title {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+.skills-item {
+    margin-bottom: 30px;
+}
+.skill-name {
+    color: #727272;
+    margin-bottom: 20px;
+}
+.skill-scale {
+    height: 4px;
+    background-color: #C4C4C4;
+}
+.skill-scale-inner {
+    width: 70%;
+    height: 100%; /* 100% от высоты .skill-scale = 4px */
+    background-color: #34547A;
+}
+.skills-img {
+    width: 50%;
+}
+/* Как я работаю */
+.process {
+    background-color: #EEEFF1;
+    padding: 100px 0;
+}
+.process-wrapper {
+    width: 60%;
+    margin: auto;
+}
+.process-title {
+    font-size: 32px;
+    text-align: center;
+}
+.process-descr {
+    width: 50%;
+    color: #727272;
+    margin: 50px auto 60px; /* 1е - сверху, 2ое - справа/слева, 3е - снизу */
+    text-align: center;
+}
+iframe {
+    width: 100%;
+    aspect-ratio: 16/9; /* соотношение сторон 16/9 */
+}
+/* Проекты */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects-item {
+    width: 25%;
+    aspect-ratio: 1/1;
+    background-size: contain; /* во всю высоту, а ширина масштабируется */
+}
+.sticker {
+    background-image: url(./images/sticker.png);
+}
+.laptop {
+    background-image: url(./images/laptop.png);
+}
+.projects-item-inner {
+    height: 100%;
+    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects-item-inner:hover {
+    opacity: 1;
+}
+/* 
+    h1,h2,h3,h4,h5,h6 - font-weight - 600 bold - жирный шритф
+    p,a,span - 400 normal - нормальный шрифт
+
+    font-weight: 400; - нормальный
+    font-weight: 600; - жирный
+
+    1920 - ширина макета, section - ширина экрана
+    1111 - ширина враппера
+
+    1111/1920 * 100 = 57.8% = 60%
+
+
+    ctrl+C - копировать
+*/
