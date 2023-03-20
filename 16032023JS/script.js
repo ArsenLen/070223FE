@@ -95,6 +95,8 @@ function renderProducts(arr) {
     })
     // Вызываем функцию слушатель наведения
     onCardHover()
+    // Вызываем удаление элемента
+    deleteProduct()
 }
 renderProducts(products) // сразу отображаем пользователю продукты из product
 
@@ -108,10 +110,7 @@ function onCardHover() {
             card.querySelector('.delete-btn').style.display = 'none'
         })
     })
-    // Вызываем удаление элемента
-    deleteProduct()
 }
-onCardHover()
 
 function deleteProduct() {
     const deleteBtns = document.querySelectorAll('.delete-btn')
